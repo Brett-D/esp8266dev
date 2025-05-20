@@ -7,8 +7,8 @@
 #include <ESP8266WiFi.h>
 
 // Replace with your network credentials
-const char* ssid     = "GuestWifi";
-const char* password = "Hello@123";
+const char* ssid     = "Bratlol";
+const char* password = "Hello123";
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -51,6 +51,7 @@ void setup() {
     state = toggle(state);
     digitalWrite(output4, state);
     Serial.print(".");
+    Serial.println("PWSTANDBY");
   }
   // Print local IP address and start web server
   Serial.println("");
